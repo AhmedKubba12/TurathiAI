@@ -164,11 +164,11 @@ paper's best setup; each file in `configs/ablations/` changes exactly one factor
 | `no_masked_loss.yaml`      | disable masked training        |
 | `no_snr.yaml`              | disable min-SNR weighting      |
 
-## Method in one paragraph
+## Methodology Overview
 
 Building photos are segmented by generating many SAM candidate masks and keeping
-the one that best matches a building — **large, compact and connected** — via the
-score `area × (area / bounding_box_area)`; the winner is closed, reduced to its
+the one that best matches a building, **large, compact and connected**, via the
+score `area × (area / bounding_box_area)`, the winner is closed, reduced to its
 largest contour and upscaled. SDXL is then adapted with LoRA while the denoising
 loss is **restricted to building pixels** (masked training) and **reweighted per
 timestep** with min-SNR-γ. Checkpoints are chosen by a fixed-condition validation
