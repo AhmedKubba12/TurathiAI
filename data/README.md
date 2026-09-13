@@ -26,7 +26,7 @@ data/CHDB_Full/
 ```
 
 The dataset itself is **not** committed to this repository (see `.gitignore`); it
-is distributed separately under its own terms. Place the extracted `CHDB_Full`
+is distributed separately under its own terms (contact the authors). Place the extracted `CHDB_Full`
 folder here, or point the config/CLIs at your own path.
 
 ## Key statistics (Section 3.1.4)
