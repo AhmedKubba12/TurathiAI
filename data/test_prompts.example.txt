@@ -1,0 +1,13 @@
+# Example held-out evaluation prompts (Section 3.3). The full protocol uses 100
+# prompts: 30% traditional exteriors, 30% modern reinterpretations, 30% interiors,
+# 10% close-up details. Replace this file with your own `test_prompts.txt`.
+traditional Emirati residential exterior with wind tower, coral stone facade
+Emirati heritage house exterior, gypsum plaster walls, wooden door, arched windows
+heritage Emirati house, north-east elevation, beige coral stone and mortar walls with gypsum layer, flat roof with parapet
+modern Emirati villa exterior, fusion of heritage and contemporary design
+contemporary Emirati house, flat roof, large glazing, mashrabiya-inspired screens
+modern villa inspired by traditional Emirati architecture, mashrabiya screens, wind tower elements, central courtyard
+Emirati heritage majlis interior, carpets, low seating, carved wooden details
+modern Emirati living room interior, neutral palette, heritage motifs
+close-up of an Emirati mashrabiya wooden screen, intricate geometric pattern
+close-up of a barjeel wind tower, four sides, wooden support beams, coral stone

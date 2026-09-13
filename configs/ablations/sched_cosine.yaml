@@ -1,0 +1,2 @@
+name: sched_cosine
+train: {output_dir: outputs/lora_sched_cosine_best, lr_scheduler: cosine}

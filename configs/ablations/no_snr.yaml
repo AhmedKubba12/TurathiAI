@@ -1,0 +1,3 @@
+name: no_snr
+# Ablate min-SNR weighting (+56% val loss in the paper).
+train: {output_dir: outputs/lora_no_snr_best, snr_gamma: null}

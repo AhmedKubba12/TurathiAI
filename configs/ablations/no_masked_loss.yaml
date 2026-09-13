@@ -1,0 +1,4 @@
+name: no_masked_loss
+# Ablate masked training: loss over the whole latent (+21% val loss in the paper).
+data: {use_masked_loss: false}
+train: {output_dir: outputs/lora_no_masked_loss_best}

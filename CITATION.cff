@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+title: "TurathiAI: Diffusion-Based Text-to-Image Model for Regional Residential Cultural Heritage Architectural Building Design"
+message: "If you use this software or the curated dataset, please cite the paper below."
+type: software
+authors:
+  - family-names: Abu Talib
+    given-names: Manar
+  - family-names: Ibrahim
+    given-names: Iman
+  - family-names: Ammar
+    given-names: Ahmed
+  - family-names: Tabet Aoul
+    given-names: Kheira Anissa
+  - family-names: Abuimara
+    given-names: Tareq
+repository-code: "https://github.com/<your-org>/TurathiAI"
+license: MIT
+preferred-citation:
+  type: article
+  title: "TurathiAI: Diffusion-Based Text-to-Image Model for Regional Residential Cultural Heritage Architectural Building Design"
+  authors:
+    - family-names: Abu Talib
+      given-names: Manar
+    - family-names: Ibrahim
+      given-names: Iman
+    - family-names: Ammar
+      given-names: Ahmed
+    - family-names: Tabet Aoul
+      given-names: Kheira Anissa
+    - family-names: Abuimara
+      given-names: Tareq
+  year: 2025
+  notes: "Available at SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6081896"

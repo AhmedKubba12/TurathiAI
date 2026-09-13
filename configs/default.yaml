@@ -1,0 +1,23 @@
+# Baseline / best configuration (Section 4.3, Table 26):
+# LoRA rank 32, Prodigy, constant LR, masked loss, min-SNR weighting.
+name: default
+data:
+  dataset_dir: data/CHDB_Full
+  resolution: 1024
+  val_split: 0.10
+  use_masked_loss: true
+model:
+  base_model: stabilityai/stable-diffusion-xl-base-1.0
+  vae_model: madebyollin/sdxl-vae-fp16-fix
+  lora_rank: 32
+  lora_alpha: 32
+train:
+  output_dir: outputs/lora_default_best
+  optimizer: prodigy
+  learning_rate: 1.0
+  lr_scheduler: constant
+  max_train_steps: 9000
+  snr_gamma: 5.0
+eval:
+  test_prompts: data/test_prompts.txt
+  images_per_prompt: 4

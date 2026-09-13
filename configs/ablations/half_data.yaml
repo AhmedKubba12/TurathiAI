@@ -1,0 +1,4 @@
+name: half_data
+# Halve the training set (val split doubled to hold out the other ~50%).
+data: {val_split: 0.50}
+train: {output_dir: outputs/lora_half_data_best}

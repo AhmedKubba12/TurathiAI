@@ -1,0 +1,5 @@
+name: opt_adamw8bit
+train:
+  output_dir: outputs/lora_opt_adamw8bit_best
+  optimizer: adamw8bit
+  learning_rate: 1.0e-4

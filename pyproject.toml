@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "turathiai"
+version = "1.0.0"
+description = "Diffusion-based text-to-image adaptation for Emirati residential cultural-heritage architectural design."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Manar Abu Talib"},
+    {name = "Iman Ibrahim"},
+    {name = "Ahmed Ammar"},
+    {name = "Kheira Anissa Tabet Aoul"},
+    {name = "Tareq Abuimara"},
+]
+keywords = ["diffusion", "stable-diffusion", "lora", "cultural-heritage",
+            "architecture", "text-to-image", "sdxl", "uae"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+turathiai-segment = "turathiai.segmentation.sam_segment:main"
+turathiai-train = "turathiai.training.train_lora:main"
+turathiai-generate = "turathiai.generate:main"
+turathiai-evaluate = "turathiai.evaluation.evaluate:main"
