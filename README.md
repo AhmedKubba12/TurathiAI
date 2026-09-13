@@ -16,7 +16,7 @@
 
 *Turathi* (تراثي) means *"my heritage"* in Arabic. TurathiAI adapts large
 pretrained text-to-image diffusion models to generate residential architecture
-that fuses **traditional Emirati design** with **contemporary form** — as a
+that fuses **traditional Emirati design** with **contemporary form** as a
 counterweight to the Westernized aesthetic bias of mainstream generative models.
 
 The repository provides the full pipeline behind the paper: **dataset curation
@@ -26,17 +26,17 @@ weighting, and a complete **image-quality + statistical evaluation** suite.
 
 ## Highlights
 
-- 🏛️ **CHDB dataset** — 634 complete triples (image + caption + mask) of Emirati
+- 🏛️ **CHDB dataset**: 634 complete triples (image + caption + mask) of Emirati
   residential heritage buildings, manually captured and expert-annotated.
-- ✂️ **Automated segmentation** — SAM candidate masks ranked by a large-compact-
+- ✂️ **Automated segmentation**: SAM candidate masks ranked by a large-compact-
   connected heuristic (paper Eq. 1), refined and validated (mean IoU 0.768).
-- 🎯 **Adaptation study** — full fine-tuning vs. LoRA across ranks
+- 🎯 **Adaptation study**: full fine-tuning vs. LoRA across ranks
   {16, 32, 64, 128, 256} and two optimizer families (Prodigy, AdamW).
-- 🧪 **Ablation** — isolates the decisive components: **masked training** and
+- 🧪 **Ablation**: isolates the decisive components, **masked training** and
   **min-SNR weighting** (removing them raises validation loss by 21% / 56%).
-- 📊 **Rigorous evaluation** — CLIP, FID, LPIPS, SSIM + ANOVA / Friedman /
+- 📊 **Rigorous evaluation**: CLIP, FID, LPIPS, SSIM + ANOVA / Friedman /
   Holm-corrected pairwise tests, plus a blind expert study.
-- 🔁 **Backbone-agnostic** — the same dataset + pipeline transfers to Qwen-Image,
+- 🔁 **Backbone-agnostic**: the same dataset + pipeline transfers to Qwen-Image,
   FLUX, HiDream, OmniGen2, and Z-Image.
 
 ## Repository structure
@@ -72,7 +72,7 @@ TurathiAI/
 ## Installation
 
 ```bash
-git clone https://github.com/<your-org>/TurathiAI.git
+git clone https://github.com/AhmedKubba12/TurathiAI.git
 cd TurathiAI
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
@@ -80,7 +80,7 @@ pip install -e .            # exposes the turathiai-* CLIs
 ```
 
 A CUDA GPU is required for training/generation. Experiments in the paper ran on
-NVIDIA A10G (AWS EC2 G5); evaluation notebooks run on an L4. 8-bit optimizers
+NVIDIA A10G (AWS EC2 G5), evaluation notebooks run on an L4. 8-bit optimizers
 (`bitsandbytes`) need Linux + CUDA.
 
 ## Quick start
