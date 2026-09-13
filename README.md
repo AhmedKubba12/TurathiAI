@@ -26,15 +26,15 @@ weighting, and a complete **image-quality + statistical evaluation** suite.
 
 ## Highlights
 
-- 🏛️ **CHDB dataset**: 634 complete triples (image + caption + mask) of Emirati
+- 🏛️ **CHDB Dataset**: 634 complete triples (image + caption + mask) of Emirati
   residential heritage buildings, manually captured and expert-annotated.
-- ✂️ **Automated segmentation**: SAM candidate masks ranked by a large-compact-
+- ✂️ **Automated Segmentation**: SAM candidate masks ranked by a large-compact-
   connected heuristic (paper Eq. 1), refined and validated (mean IoU 0.768).
-- 🎯 **Adaptation study**: full fine-tuning vs. LoRA across ranks
+- 🎯 **Adaptation Study**: full fine-tuning vs. LoRA across ranks
   {16, 32, 64, 128, 256} and two optimizer families (Prodigy, AdamW).
-- 🧪 **Ablation**: isolates the decisive components, **masked training** and
+- 🧪 **Ablation Study**: isolates the decisive components, **masked training** and
   **min-SNR weighting** (removing them raises validation loss by 21% / 56%).
-- 📊 **Rigorous evaluation**: CLIP, FID, LPIPS, SSIM + ANOVA / Friedman /
+- 📊 **Qualitative and Quantitative Evaluation**: CLIP, FID, LPIPS, SSIM + ANOVA / Friedman /
   Holm-corrected pairwise tests, plus a blind expert study.
 - 🔁 **Backbone-agnostic**: the same dataset + pipeline transfers to Qwen-Image,
   FLUX, HiDream, OmniGen2, and Z-Image.
