@@ -1,4 +1,4 @@
-# CHDB — Cultural Heritage Design Database
+# Cultural Heritage Design Database (CHDB)
 
 The **CHDB** dataset is the curated multimodal resource introduced in the paper
 (Section 3.1). It consists of **634 complete triples** (1,902 files in total),
